@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ai-service
+
+  data:
+    mongodb:
+      url: mongodb://localhost:27017/fitnessrecommendation
+      database: fitnessrecommendation
+
+eureka:
+  service:
+    url:
+      defaultZone: http://localhost:8761/eureka/
+
+gemini:
+  api:
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyB3-AodYlKnz0-evAxrYFKUBKIj_hrS_Ww
+    key: AIzaSyB3-AodYlKnz0-evAxrYFKUBKIj_hrS_Ww
